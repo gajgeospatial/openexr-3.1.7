@@ -1,0 +1,684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Debug|x64">
+      <Configuration>vs2022_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2022_Release|x64">
+      <Configuration>vs2022_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{79BEEF94-4D1F-36BB-A8F2-2FDED5150D70}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>OpenEXR</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OpenEXR-3_1_d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">OpenEXR-3_1_d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">OpenEXR-3_1_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OpenEXR-3_1</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">OpenEXR-3_1</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">OpenEXR-3_1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OpenEXR-3_1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OpenEXR-3_1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR="Debug";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR=\"Debug\";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath-3_1_d.lib;IlmThread-3_1_d.lib;zlibstaticd.lib;Iex-3_1_d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)OpenEXR-3_1_d.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR="Debug";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR=\"Debug\";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath-3_1_d.lib;IlmThread-3_1_d.lib;zlib.lib;Iex-3_1_d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)OpenEXR-3_1_d.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR="Debug";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR=\"Debug\";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath-3_1_d.lib;IlmThread-3_1_d.lib;zlib.lib;Iex-3_1_d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)OpenEXR-3_1_d.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR="Release";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR=\"Release\";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath-3_1.lib;IlmThread-3_1.lib;zlibstatic.lib;Iex-3_1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)OpenEXR-3_1.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR="Release";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR=\"Release\";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath-3_1.lib;IlmThread-3_1.lib;zlib.lib;Iex-3_1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)OpenEXR-3_1.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR="Release";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR=\"Release\";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath-3_1.lib;IlmThread-3_1.lib;zlib.lib;Iex-3_1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)OpenEXR-3_1.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR="MinSizeRel";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR=\"MinSizeRel\";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath-3_1.lib;IlmThread-3_1.lib;zlibstatic.lib;Iex-3_1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\_deps\imath-build\src\Imath\MinSizeRel;..\IlmThread\MinSizeRel;..\Iex\MinSizeRel;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)OpenEXR-3_1.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR="RelWithDebInfo";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENEXR_EXPORTS;OPENEXR_DLL;IMATH_DLL;CMAKE_INTDIR=\"RelWithDebInfo\";OpenEXR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\..\src\lib\OpenEXR;..\..\..\cmake;..\..\..\_deps\imath-src\src\Imath;..\..\..\_deps\imath-build\config;..\..\..\..\src\lib\Iex;..\..\..\..\src\lib\IlmThread;..\..\..\zlib-install\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath-3_1.lib;IlmThread-3_1.lib;zlibstatic.lib;Iex-3_1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\_deps\imath-build\src\Imath\MinSizeRel;..\IlmThread\MinSizeRel;..\Iex\MinSizeRel;..\..\..\_deps\imath-build\src\Imath\RelWithDebInfo;..\IlmThread\RelWithDebInfo;..\Iex\RelWithDebInfo;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)OpenEXR-3_1.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfAcesFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfArray.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfBoxAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfChannelList.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfChannelListAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfChromaticities.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfChromaticitiesAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfCompositeDeepScanLine.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfCompression.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfCompressionAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfConvert.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfCRgbaFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDeepCompositing.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDeepFrameBuffer.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDeepImageState.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDeepImageStateAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDeepScanLineInputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDeepScanLineInputPart.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDeepScanLineOutputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDeepScanLineOutputPart.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDeepTiledInputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDeepTiledInputPart.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDeepTiledOutputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDeepTiledOutputPart.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDoubleAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfEnvmap.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfEnvmapAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfExport.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfFloatAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfFloatVectorAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfForward.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfFrameBuffer.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfFramesPerSecond.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfGenericInputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfGenericOutputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfHeader.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfHuf.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfIDManifest.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfIDManifestAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfInputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfInputPart.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfInt64.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfIntAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfIO.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfKeyCode.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfKeyCodeAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfLineOrder.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfLineOrderAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfLut.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfMatrixAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfMultiPartInputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfMultiPartOutputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfMultiView.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfName.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfNamespace.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfOpaqueAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfOutputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfOutputPart.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfPartHelper.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfPartType.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfPixelType.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfPreviewImage.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfPreviewImageAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfRational.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfRationalAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfRgba.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfRgbaFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfRgbaYca.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfStandardAttributes.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfStdIO.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfStringAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfStringVectorAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfTestFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfThreading.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfTileDescription.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfTileDescriptionAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfTiledInputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfTiledInputPart.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfTiledOutputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfTiledOutputPart.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfTiledRgbaFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfTimeCode.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfTimeCodeAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfVecAttribute.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfVersion.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfWav.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfXdr.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfAutoArray.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfB44Compressor.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfCheckedArithmetic.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfCompressor.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDwaCompressor.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfDwaCompressorSimd.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfFastHuf.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfInputPartData.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfInputStreamMutex.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfMisc.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfOptimizedPixelReading.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfOutputPartData.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfOutputStreamMutex.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfPizCompressor.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfPxr24Compressor.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfRle.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfRleCompressor.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfScanLineInputFile.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfSimd.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfSystemSpecific.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfTileOffsets.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfTiledMisc.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfZip.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\ImfZipCompressor.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\b44ExpLogTable.h" />
+    <ClInclude Include="..\..\..\..\src\lib\OpenEXR\dwaLookups.h" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfAcesFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfB44Compressor.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfBoxAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfChannelList.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfChannelListAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfChromaticities.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfChromaticitiesAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfCompositeDeepScanLine.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfCompressionAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfConvert.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfCRgbaFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDeepCompositing.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDeepFrameBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDeepImageStateAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDeepScanLineInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDeepScanLineInputPart.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDeepScanLineOutputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDeepScanLineOutputPart.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDeepTiledInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDeepTiledInputPart.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDeepTiledOutputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDeepTiledOutputPart.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDoubleAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfDwaCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfEnvmap.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfEnvmapAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfFastHuf.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfFloatAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfFloatVectorAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfFrameBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfFramesPerSecond.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfGenericInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfGenericOutputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfHeader.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfHuf.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfIDManifest.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfIDManifestAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfInputPart.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfInputPartData.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfIntAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfIO.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfKeyCode.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfKeyCodeAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfLineOrderAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfLut.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfMatrixAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfMisc.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfMultiPartInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfMultiPartOutputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfMultiView.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfOpaqueAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfOutputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfOutputPart.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfOutputPartData.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfPartType.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfPizCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfPreviewImage.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfPreviewImageAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfPxr24Compressor.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfRational.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfRationalAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfRgbaFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfRgbaYca.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfRle.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfRleCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfScanLineInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfStandardAttributes.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfStdIO.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfStringAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfStringVectorAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfSystemSpecific.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfTestFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfThreading.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfTileDescriptionAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfTiledInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfTiledInputPart.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfTiledMisc.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfTiledOutputFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfTiledOutputPart.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfTiledRgbaFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfTileOffsets.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfTimeCode.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfTimeCodeAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfVecAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfVersion.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfWav.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfZip.cpp" />
+    <ClCompile Include="..\..\..\..\src\lib\OpenEXR\ImfZipCompressor.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

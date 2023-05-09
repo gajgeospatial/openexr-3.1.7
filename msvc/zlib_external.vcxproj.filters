@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-mkdir.rule" />
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-download.rule" />
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-update.rule" />
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-patch.rule" />
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-configure.rule" />
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-build.rule" />
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-install.rule" />
+    <CustomBuild Include=".\CMakeFiles\647a121c2c45becd92f46380c0db2971\zlib_external-complete.rule" />
+    <CustomBuild Include=".\CMakeFiles\3c2e907eb6fa2ca2b13a5d6934cd9246\zlib_external.rule" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\zlib_external" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D05A9321-5AB2-3D54-9451-8A3EB59D423B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{287403F4-23F3-3A63-9EE7-1162D2B505A3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\openexr-3.1.7\msvc;N:\Development\Dev_Base\openexr-3.1.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\openexr-3.1.7\msvc;N:\Development\Dev_Base\openexr-3.1.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\openexr-3.1.7\msvc;N:\Development\Dev_Base\openexr-3.1.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\openexr-3.1.7\msvc;N:\Development\Dev_Base\openexr-3.1.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule N:/Development/Dev_Base/openexr-3.1.7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/openexr-3.1.7 -BN:/Development/Dev_Base/openexr-3.1.7/msvc --check-stamp-file N:/Development/Dev_Base/openexr-3.1.7/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\RepositoryInfo.txt.in;N:\Development\Dev_Base\openexr-3.1.7\cmake\LibraryDefine.cmake;N:\Development\Dev_Base\openexr-3.1.7\cmake\OpenEXRSetup.cmake;N:\Development\Dev_Base\openexr-3.1.7\cmake\clang-format.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeCCompiler.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeSystem.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\zlib_external-prefix\tmp\zlib_external-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule N:/Development/Dev_Base/openexr-3.1.7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/openexr-3.1.7 -BN:/Development/Dev_Base/openexr-3.1.7/msvc --check-stamp-file N:/Development/Dev_Base/openexr-3.1.7/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\RepositoryInfo.txt.in;N:\Development\Dev_Base\openexr-3.1.7\cmake\LibraryDefine.cmake;N:\Development\Dev_Base\openexr-3.1.7\cmake\OpenEXRSetup.cmake;N:\Development\Dev_Base\openexr-3.1.7\cmake\clang-format.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeCCompiler.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeSystem.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\zlib_external-prefix\tmp\zlib_external-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule N:/Development/Dev_Base/openexr-3.1.7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/openexr-3.1.7 -BN:/Development/Dev_Base/openexr-3.1.7/msvc --check-stamp-file N:/Development/Dev_Base/openexr-3.1.7/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\RepositoryInfo.txt.in;N:\Development\Dev_Base\openexr-3.1.7\cmake\LibraryDefine.cmake;N:\Development\Dev_Base\openexr-3.1.7\cmake\OpenEXRSetup.cmake;N:\Development\Dev_Base\openexr-3.1.7\cmake\clang-format.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeCCompiler.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeSystem.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\zlib_external-prefix\tmp\zlib_external-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule N:/Development/Dev_Base/openexr-3.1.7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/openexr-3.1.7 -BN:/Development/Dev_Base/openexr-3.1.7/msvc --check-stamp-file N:/Development/Dev_Base/openexr-3.1.7/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\RepositoryInfo.txt.in;N:\Development\Dev_Base\openexr-3.1.7\cmake\LibraryDefine.cmake;N:\Development\Dev_Base\openexr-3.1.7\cmake\OpenEXRSetup.cmake;N:\Development\Dev_Base\openexr-3.1.7\cmake\clang-format.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeCCompiler.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\3.20.0\CMakeSystem.cmake;N:\Development\Dev_Base\openexr-3.1.7\msvc\zlib_external-prefix\tmp\zlib_external-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\ZERO_CHECK.vcxproj">
+      <Project>{199455CE-8643-30BA-920A-2C20C9466626}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\lib\Iex\Iex.vcxproj">
+      <Project>{C09BF9B3-EA2C-3197-8D3B-7358D6A154E6}</Project>
+      <Name>Iex</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\lib\IlmThread\IlmThread.vcxproj">
+      <Project>{8C29DD8B-4F4E-3CCC-9272-B1A24A4A94C8}</Project>
+      <Name>IlmThread</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-build\src\Imath\Imath.vcxproj">
+      <Project>{4BD3AB50-C49A-3867-B27D-1E1C6FD076E3}</Project>
+      <Name>Imath</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\lib\OpenEXR\OpenEXR.vcxproj">
+      <Project>{79BEEF94-4D1F-36BB-A8F2-2FDED5150D70}</Project>
+      <Name>OpenEXR</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\lib\OpenEXRCore\OpenEXRCore.vcxproj">
+      <Project>{F82E39B4-416F-3A4B-B0E7-44C2D82E867D}</Project>
+      <Name>OpenEXRCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\examples\OpenEXRExamples.vcxproj">
+      <Project>{F358286D-6BE4-3124-B917-BDBAD417FD54}</Project>
+      <Name>OpenEXRExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\lib\OpenEXRUtil\OpenEXRUtil.vcxproj">
+      <Project>{376E41C3-4B1B-3B4E-B675-14A646ED2BDD}</Project>
+      <Name>OpenEXRUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\bin\exr2aces\exr2aces.vcxproj">
+      <Project>{B18F8EEE-2841-38D2-9140-DACB5BE37059}</Project>
+      <Name>exr2aces</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\bin\exrcheck\exrcheck.vcxproj">
+      <Project>{4C94AC21-4782-3073-8014-748BBE528499}</Project>
+      <Name>exrcheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\bin\exrenvmap\exrenvmap.vcxproj">
+      <Project>{1288FD53-EF8A-31A7-B1E7-227BCFAB472D}</Project>
+      <Name>exrenvmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\bin\exrheader\exrheader.vcxproj">
+      <Project>{70A76905-E6C5-31CB-BF8B-5F394A1238C1}</Project>
+      <Name>exrheader</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\bin\exrinfo\exrinfo.vcxproj">
+      <Project>{E23C67DF-8A1B-3456-BC1D-C8F1AB66599E}</Project>
+      <Name>exrinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\bin\exrmakepreview\exrmakepreview.vcxproj">
+      <Project>{F9E99D96-CEA0-3775-BBF7-28DCBC13A1E8}</Project>
+      <Name>exrmakepreview</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\bin\exrmaketiled\exrmaketiled.vcxproj">
+      <Project>{9E92EAE0-4F78-3906-8AC4-0349323C2A34}</Project>
+      <Name>exrmaketiled</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\bin\exrmultipart\exrmultipart.vcxproj">
+      <Project>{08639F48-0D5F-3FF1-85D7-BD854E6E3333}</Project>
+      <Name>exrmultipart</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\bin\exrmultiview\exrmultiview.vcxproj">
+      <Project>{7A8EE817-A328-3B2A-88B8-BD509F49E24D}</Project>
+      <Name>exrmultiview</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\src\bin\exrstdattr\exrstdattr.vcxproj">
+      <Project>{2AA1FA17-158E-32C3-B946-9C919B983B42}</Project>
+      <Name>exrstdattr</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\zlib_external.vcxproj">
+      <Project>{48EC46DE-43CA-3EB9-ACA4-E6D9B6FD0226}</Project>
+      <Name>zlib_external</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

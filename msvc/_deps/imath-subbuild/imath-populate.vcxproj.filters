@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeFiles\287d34718577bdb438d8ce3def8381f5\imath-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeFiles\287d34718577bdb438d8ce3def8381f5\imath-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeFiles\287d34718577bdb438d8ce3def8381f5\imath-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeFiles\287d34718577bdb438d8ce3def8381f5\imath-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeFiles\287d34718577bdb438d8ce3def8381f5\imath-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeFiles\287d34718577bdb438d8ce3def8381f5\imath-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeFiles\287d34718577bdb438d8ce3def8381f5\imath-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeFiles\287d34718577bdb438d8ce3def8381f5\imath-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeFiles\cb90b520d2190d74734493d800becbf5\imath-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeFiles\474d2f82070a1afe2a4ba48ad48581bb\imath-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeFiles\imath-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A9A47515-10B3-3BA2-95EE-62E761FBFEE8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

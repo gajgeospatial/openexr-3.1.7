@@ -1,0 +1,1152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{48EC46DE-43CA-3EB9-ACA4-E6D9B6FD0226}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>zlib_external</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Creating directories for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E make_directory .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib-install
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\tmp
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src\zlib_external-stamp
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E make_directory .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib-install
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\tmp
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src\zlib_external-stamp
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Creating directories for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E make_directory .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib-install
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\tmp
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src\zlib_external-stamp
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E make_directory .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib-install
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\tmp
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src\zlib_external-stamp
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E make_directory .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib-install
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\tmp
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src\zlib_external-stamp
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E make_directory .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib-install
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\tmp
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E make_directory .\zlib_external-prefix\src\zlib_external-stamp
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Performing download step (git clone) for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -P .\zlib_external-prefix\tmp\zlib_external-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -P .\zlib_external-prefix\tmp\zlib_external-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\zlib_external-gitinfo.txt;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\zlib_external-gitinfo.txt;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Performing download step (git clone) for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -P .\zlib_external-prefix\tmp\zlib_external-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -P .\zlib_external-prefix\tmp\zlib_external-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\zlib_external-gitinfo.txt;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\zlib_external-gitinfo.txt;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -P .\zlib_external-prefix\tmp\zlib_external-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\zlib_external-gitinfo.txt;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -P .\zlib_external-prefix\tmp\zlib_external-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\zlib_external-gitinfo.txt;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">No update step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cd .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No update step for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">No update step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cd .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No update step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No update step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">No patch step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">No patch step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Performing configure step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -D CMAKE_BUILD_TYPE= -D CMAKE_POSITION_INDEPENDENT_CODE=ON -D CMAKE_INSTALL_PREFIX:PATH=N:/Development/Dev_Base/openexr-3.1.7/msvc/zlib-install -D CMAKE_GENERATOR:STRING=Visual Studio 16 2019" -GVisual Studio 16 2019" -Ax64 -DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise" .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -D CMAKE_BUILD_TYPE= -D CMAKE_POSITION_INDEPENDENT_CODE=ON -D CMAKE_INSTALL_PREFIX:PATH=N:/Development/Dev_Base/openexr-3.1.7/msvc/zlib-install -D CMAKE_GENERATOR:STRING=Visual Studio 16 2019" -GVisual Studio 16 2019" -Ax64 -DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise" .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\tmp\zlib_external-cfgcmd.txt;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\tmp\zlib_external-cfgcmd.txt;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Performing configure step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -D CMAKE_BUILD_TYPE= -D CMAKE_POSITION_INDEPENDENT_CODE=ON -D CMAKE_INSTALL_PREFIX:PATH=N:/Development/Dev_Base/openexr-3.1.7/msvc/zlib-install -D CMAKE_GENERATOR:STRING=Visual Studio 16 2019" -GVisual Studio 16 2019" -Ax64 -DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise" .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -D CMAKE_BUILD_TYPE= -D CMAKE_POSITION_INDEPENDENT_CODE=ON -D CMAKE_INSTALL_PREFIX:PATH=N:/Development/Dev_Base/openexr-3.1.7/msvc/zlib-install -D CMAKE_GENERATOR:STRING=Visual Studio 16 2019" -GVisual Studio 16 2019" -Ax64 -DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise" .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\tmp\zlib_external-cfgcmd.txt;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\tmp\zlib_external-cfgcmd.txt;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -D CMAKE_BUILD_TYPE= -D CMAKE_POSITION_INDEPENDENT_CODE=ON -D CMAKE_INSTALL_PREFIX:PATH=N:/Development/Dev_Base/openexr-3.1.7/msvc/zlib-install -D CMAKE_GENERATOR:STRING=Visual Studio 16 2019" -GVisual Studio 16 2019" -Ax64 -DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise" .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\tmp\zlib_external-cfgcmd.txt;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -D CMAKE_BUILD_TYPE= -D CMAKE_POSITION_INDEPENDENT_CODE=ON -D CMAKE_INSTALL_PREFIX:PATH=N:/Development/Dev_Base/openexr-3.1.7/msvc/zlib-install -D CMAKE_GENERATOR:STRING=Visual Studio 16 2019" -GVisual Studio 16 2019" -Ax64 -DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise" .\zlib-src
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\tmp\zlib_external-cfgcmd.txt;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Performing build step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Performing build step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeFiles\c8d5a8d919644280946bb8d41fd803a3\zlib_external-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing install step for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Performing install step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing install step for 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Performing install step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake --build . --config Release --target install
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake --build . --config Release --target install
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing install step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake --build . --config MinSizeRel --target install
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing install step for 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd .\zlib-build
+if %errorlevel% neq 0 goto :cmEnd
+N:
+if %errorlevel% neq 0 goto :cmEnd
+cmake --build . --config RelWithDebInfo --target install
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeFiles\647a121c2c45becd92f46380c0db2971\zlib_external-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Completed 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E make_directory .\CMakeFiles\$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\CMakeFiles\$(Configuration)\zlib_external-complete
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E make_directory .\CMakeFiles\$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\CMakeFiles\$(Configuration)\zlib_external-complete
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\CMakeFiles\$(Configuration)\zlib_external-complete</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\CMakeFiles\$(Configuration)\zlib_external-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'zlib_external'</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Completed 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E make_directory .\CMakeFiles\$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\CMakeFiles\$(Configuration)\zlib_external-complete
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E make_directory .\CMakeFiles\$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\CMakeFiles\$(Configuration)\zlib_external-complete
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\CMakeFiles\$(Configuration)\zlib_external-complete</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\CMakeFiles\$(Configuration)\zlib_external-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cmake -E make_directory .\CMakeFiles\$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\CMakeFiles\$(Configuration)\zlib_external-complete
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\CMakeFiles\$(Configuration)\zlib_external-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'zlib_external'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E make_directory .\CMakeFiles\$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\CMakeFiles\$(Configuration)\zlib_external-complete
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E touch .\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-install;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-mkdir;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-download;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-update;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-patch;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-configure;.\zlib_external-prefix\src\zlib_external-stamp\$(Configuration)\zlib_external-build;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\CMakeFiles\$(Configuration)\zlib_external-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeFiles\3c2e907eb6fa2ca2b13a5d6934cd9246\zlib_external.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\CMakeFiles\$(Configuration)\zlib_external-complete;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\CMakeFiles\$(Configuration)\zlib_external-complete;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\CMakeFiles\zlib_external</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\CMakeFiles\zlib_external</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\CMakeFiles\$(Configuration)\zlib_external-complete;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\CMakeFiles\$(Configuration)\zlib_external-complete;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\CMakeFiles\zlib_external</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\CMakeFiles\zlib_external</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\CMakeFiles\$(Configuration)\zlib_external-complete;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.\CMakeFiles\zlib_external</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\CMakeFiles\$(Configuration)\zlib_external-complete;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\CMakeFiles\zlib_external</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\CMakeFiles\zlib_external">
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

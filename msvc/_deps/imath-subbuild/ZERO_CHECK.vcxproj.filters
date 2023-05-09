@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\openexr-3.1.7\msvc\_deps\imath-subbuild\CMakeFiles\474d2f82070a1afe2a4ba48ad48581bb\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A9A47515-10B3-3BA2-95EE-62E761FBFEE8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

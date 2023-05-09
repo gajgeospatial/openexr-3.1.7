@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.20/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/WriteBasicConfigVersionFile.cmake
+N:/Development/Dev_Base/openexr-3.1.7/msvc/_deps/imath-src/config/CMakeLists.txt
+N:/Development/Dev_Base/openexr-3.1.7/msvc/_deps/imath-src/config/ImathConfig.cmake.in
+N:/Development/Dev_Base/openexr-3.1.7/msvc/_deps/imath-src/config/ImathConfig.h.in

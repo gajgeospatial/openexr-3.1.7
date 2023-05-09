@@ -1,0 +1,99 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: N:/Development/Dev_Base/openexr-3.1.7/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe cmTC_e820d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30138 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckIncludeFile.c
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e820d.dir\Debug\\" /Fd"cmTC_e820d.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CMakeTmp\cmTC_e820d.vcxproj]
+
+
+
+Determining if the function sin exists in the m failed with the following output:
+Change Dir: N:/Development/Dev_Base/openexr-3.1.7/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe cmTC_b8f54.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30138 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sin /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b8f54.dir\Debug\\" /Fd"cmTC_b8f54.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.20\Modules\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'm.lib' [N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CMakeTmp\cmTC_b8f54.vcxproj]
+
+
+
+Performing C++ SOURCE FILE Test OPENEXR_IMF_HAVE_SYSCONF_NPROCESSORS_ONLN failed with the following output:
+Change Dir: N:/Development/Dev_Base/openexr-3.1.7/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe cmTC_61ce2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30138 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D OPENEXR_IMF_HAVE_SYSCONF_NPROCESSORS_ONLN /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_61ce2.dir\Debug\\" /Fd"cmTC_61ce2.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CMakeTmp\src.cxx"
+N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CMakeTmp\src.cxx(2,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CMakeTmp\cmTC_61ce2.vcxproj]
+
+
+Source file was:
+
+#include <unistd.h>
+int main()
+{
+    sysconf(_SC_NPROCESSORS_ONLN);
+}
+
+Performing C++ SOURCE FILE Test OPENEXR_IMF_HAVE_GCC_INLINE_ASM_AVX failed with the following output:
+Change Dir: N:/Development/Dev_Base/openexr-3.1.7/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe cmTC_bad14.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30138 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D OPENEXR_IMF_HAVE_GCC_INLINE_ASM_AVX /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_bad14.dir\Debug\\" /Fd"cmTC_bad14.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CMakeTmp\src.cxx"
+N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CMakeTmp\src.cxx(13,1): fatal error C1189: #error:  No SSE support enabled to query AVX support [N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CMakeTmp\cmTC_bad14.vcxproj]
+
+
+Source file was:
+
+int main()
+{
+#if defined(__SSE2__)
+    int n   = 0;
+    int eax = 0;
+    int edx = 0;
+    __asm__(
+        "xgetbv     ;"
+        "vzeroupper  "
+        : "=a"(eax), "=d"(edx) : "c"(n) : );
+#else
+#    error No SSE support enabled to query AVX support
+#endif
+}
+
+Determining if files ucontext.h exist failed with the following output:
+Change Dir: N:/Development/Dev_Base/openexr-3.1.7/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe cmTC_1f24a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30138 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  IEX_HAVE_UCONTEXT_H.c
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1f24a.dir\Debug\\" /Fd"cmTC_1f24a.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CheckIncludeFiles\IEX_HAVE_UCONTEXT_H.c"
+N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CheckIncludeFiles\IEX_HAVE_UCONTEXT_H.c(2,10): fatal error C1083: Cannot open include file: 'ucontext.h': No such file or directory [N:\Development\Dev_Base\openexr-3.1.7\msvc\CMakeFiles\CMakeTmp\cmTC_1f24a.vcxproj]
+
+
+Source:
+/* */
+#include <ucontext.h>
+
+
+int main(void){return 0;}
+
